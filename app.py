@@ -2,6 +2,8 @@ import streamlit as st
 
 
 from insert_app import run_insert_app
+from select_app import run_select_app
+from update_app import run_update_app
 
 def main():
     # CRUD 라고 한다.
@@ -11,15 +13,10 @@ def main():
 
     if choice == 'Insert':
         run_insert_app()
-
     elif choice == 'Select':
-        pass
-
+        run_select_app()
     elif choice == 'Update':
-        pass
-
-    elif choice == 'Delete':
-        pass
+        run_update_app()
 
 if __name__ == '__main__':
     main()
